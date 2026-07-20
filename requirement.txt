@@ -1,0 +1,25 @@
+# Python 3.9 dependency set for this project.
+# For CUDA-specific PyTorch wheels, install the matching torch/torchvision build
+# for your CUDA driver before or after installing this file.
+torch==2.0.1
+torchvision==0.15.2
+numpy==1.23.5
+Pillow==9.5.0
+pandas==1.5.3
+scipy==1.10.1
+scikit-learn==1.2.2
+scikit-image==0.20.0
+opencv-python==4.7.0.72
+matplotlib==3.7.2
+tensorboard==2.13.0
+tqdm==4.65.0
+prettytable==3.8.0
+menpo==0.11.1
+
+# Provides the import name `bcolz` with Python 3.9 wheels.
+bcolz-zipline==1.13.0
+
+# Used only by utils/rec2img.py and utils/bin2img.py.
+# The CUDA MXNet wheel is Linux-only; Windows users should run these utilities
+# in Linux/WSL or prepare converted data separately.
+mxnet-cu117==1.9.1; platform_system == "Linux"
